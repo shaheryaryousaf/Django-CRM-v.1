@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% load static %} {% block content %}{% load crispy_forms_tags %}
+<section class="content pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 m-auto">
+        <h2>Assign Agent</h2>
+        <p class="text-secondary">Assign an agent to lead "John Doe"</p>
+        <form class="mt-3" method="POST">
+          {% csrf_token %}{{form|crispy}}
+          <button type="submit" class="btn btn-primary w-100">Assign</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

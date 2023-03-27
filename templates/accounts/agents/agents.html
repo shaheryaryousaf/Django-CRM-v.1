@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<section class="content pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-4">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <h2>Agents</h2>
+              <p class="text-secondary">You can see all agents here</p>
+            </div>
+            <a class="btn btn-primary" href="{% url 'create-agent' %}"
+              >Create New Agent</a
+            >
+          </div>
+          <table class="table custom_table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for agent in agents %}
+              <tr>
+                <td>{{agent.first_name}} {{agent.last_name}}</td>
+                <td>{{agent.email}}</td>
+                <td><a href="#">Edit</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{% endblock %}

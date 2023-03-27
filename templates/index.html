@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<section class="content pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 m-auto">
+        <div class="text-center">
+          <img
+            src="{% static 'images/crm.jpg' %}"
+            class="img-fluid mb-3"
+            width="60%"
+          />
+          <h1 class="mb-3">Welcome to CRM</h1>
+          <a class="btn btn-primary" href="{% url 'signin' %}">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

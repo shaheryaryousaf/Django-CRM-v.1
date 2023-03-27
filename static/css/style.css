@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+header .navbar {
+  border-bottom: 1px solid #ececec;
+  padding: 12px 0;
+}
+
+header .navbar .nav-link {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Buttons and Input Fields */
+.form-control,
+.form-select {
+  padding: 10px !important;
+  font-size: 15px !important;
+  border-radius: 5px !important;
+  border-color: #ececec !important;
+}
+
+.btn {
+  padding: 10px 15px !important;
+  font-size: 15px !important;
+  border-radius: 5px !important;
+}
+
+label{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* Table */
+.custom_table{
+    border: 1px solid #ececec;
+}
+
+.custom_table thead{
+    background-color: #ececec;
+}
+
+.custom_table tr{
+    cursor: pointer;
+}
+
+.custom_table th{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.custom_table td{
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Lead */
+.lead_card .card{
+    border-color: #ececec !important;
+    border-radius: 5px;
+}
+
+.lead_card a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #0B5ED7 !important;
+}
+
+/* Auth Form */
+#hint_id_password1{
+  display: none !important;
+}
